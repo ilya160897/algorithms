@@ -1,0 +1,1 @@
+add_algorithm_executable(binary_search gadgets_for_dollars_and_pounds)

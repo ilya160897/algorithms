@@ -23,3 +23,4 @@ function(add_category category)
 endfunction()
 
 add_category(heap)
+add_category(binary_search)
