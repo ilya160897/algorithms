@@ -1,0 +1,2 @@
+add_subdirectory(k_segments_union)
+add_subdirectory(permutation_sqrt)
