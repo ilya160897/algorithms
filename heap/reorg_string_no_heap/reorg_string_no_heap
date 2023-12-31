@@ -1,1 +1,0 @@
-add_algorithm_executable(reorg_string_no_heap heap)
