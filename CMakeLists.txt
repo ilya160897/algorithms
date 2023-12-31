@@ -24,3 +24,4 @@ endfunction()
 
 add_category(heap)
 add_category(binary_search)
+add_category(meet-in-the-middle)
