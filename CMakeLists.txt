@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 project(Algorithms)
 
-set(CXX "/home/linuxbrew/.linuxbrew/bin/clang++")
-set(C "/home/linuxbrew/.linuxbrew/bin/clang")
 set(CMAKE_CXX_COMPILER "/home/linuxbrew/.linuxbrew/bin/clang++")
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
@@ -14,12 +12,7 @@ set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/tools/cmake")
 set(PROJECT_ROOT_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 set(PROJECT_BINARY_DIR "${CMAKE_CURRENT_SOURCE_DIR}/bin")
 
-message(STATUS "&&&&&&&&& DEBUG PRINT: C++ compiler &&&&&&&&&&&: ${CMAKE_CXX_COMPILER}")
-message(STATUS "&&&&&&&&& DEBUG PRINT: CXX &&&&&&&&&&&: ${CXX}")
-
-
 find_package(Catch REQUIRED)
-
 
 include(tools/cmake/TestSolution.cmake)
 

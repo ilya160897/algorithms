@@ -4,8 +4,6 @@
 #include <cassert>
 #include <cstddef>
 #include <functional>
-#include <iostream>
-#include <valarray>
 #include <vector>
 
 template <typename T, typename Compare = std::less<T>> class PriorityQueue {
