@@ -1,8 +1,13 @@
 add_custom_target(test-all)
 
-message(STATUS "&&&&&&  &&&&&&&&&")
 function(add_algorithm_executable CATEGORY TARGET)
-  add_executable(${TARGET} ${ARGN})
+  set(
+    SOURCES
+    ${TARGET}.h
+    test.cpp
+  )
+
+  add_executable(${TARGET} ${SOURCES})
   set_target_properties(${TARGET} PROPERTIES
       RUNTIME_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}/${CATEGORY}")
 
@@ -10,9 +15,6 @@ function(add_algorithm_executable CATEGORY TARGET)
   target_link_libraries(${TARGET}
     contrib_catch_main
   )
-  
-  message(STATUS "&&&&&& Project root dir: ${PROJECT_ROOT_DIR} &&&&&&&&&")
-  message(STATUS "&&&&&& Project binary dir: ${PROJECT_BINARY_DIR} &&&&&&&")
 
   add_custom_target(
     run_${TARGET}

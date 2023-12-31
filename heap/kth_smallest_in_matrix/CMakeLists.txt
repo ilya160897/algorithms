@@ -1,0 +1,1 @@
+add_algorithm_executable(heap kth_smallest_in_matrix)

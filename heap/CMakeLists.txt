@@ -1,1 +1,4 @@
 add_subdirectory(heap)
+add_subdirectory(kth_smallest_in_matrix)
+add_subdirectory(merge_sorted_lists)
+add_subdirectory(reorg_string_no_heap)

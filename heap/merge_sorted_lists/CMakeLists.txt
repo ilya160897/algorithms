@@ -1,0 +1,1 @@
+add_algorithm_executable(heap merge_sorted_lists)
