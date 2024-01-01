@@ -29,7 +29,7 @@ echo "Added add_algorithm_executable(${category} ${problem}) to ${category}/${pr
 # Creating pretty class name using CamelCase
 problem_camel_case=$(sed -r 's/(^|_)(\w)/\U\2/g' <<< ${problem})
 
-# Substituting this classname
+echo "Problem camel case name : ${problem_camel_case}"
+
+# # Substituting this classname
 sed -i "s/SolutionClass/${problem_camel_case}/" ${problem_file} ${test_file}
-# sed -i "s/SolutionClass/${problem_camel_case}/" ${test_file}
-sed -i "s/problem/${problem}/" ${test_file} ${cmake_file}
