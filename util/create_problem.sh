@@ -24,7 +24,7 @@ else
 fi
 
 echo "add_algorithm_executable(${category} ${problem})" >> ${category}/${problem}/CMakeLists.txt
-echo "Added ${category}/${problem}/CMakeLists.txt to ${category}/${problem}/CMakeLists.txt"
+echo "Added add_algorithm_executable(${category} ${problem}) to ${category}/${problem}/CMakeLists.txt"
 
 # Creating pretty class name using CamelCase
 problem_camel_case=$(sed -r 's/(^|_)(\w)/\U\2/g' <<< ${problem})
