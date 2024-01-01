@@ -1,0 +1,1 @@
+add_algorithm_executable(shitty_category stupid_shit)

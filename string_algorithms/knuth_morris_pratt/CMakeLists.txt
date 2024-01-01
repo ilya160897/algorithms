@@ -1,0 +1,1 @@
+add_algorithm_executable(string_algorithms knuth_morris_pratt)

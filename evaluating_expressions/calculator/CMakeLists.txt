@@ -1,0 +1,1 @@
+add_algorithm_executable(evaluating_expressions calculator)

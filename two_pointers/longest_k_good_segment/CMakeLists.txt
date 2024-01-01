@@ -1,0 +1,1 @@
+add_algorithm_executable(two_pointers longest_k_good_segment)

@@ -1,0 +1,2 @@
+add_subdirectory(dinner_with_natasha)
+add_subdirectory(labyrinth)

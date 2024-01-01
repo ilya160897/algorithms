@@ -1,0 +1,1 @@
+add_subdirectory(longest_k_good_segment)
