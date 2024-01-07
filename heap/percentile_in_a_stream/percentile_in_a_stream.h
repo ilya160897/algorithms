@@ -8,15 +8,6 @@
 using MaxHeapInt = std::priority_queue<int>;
 using MinHeapInt = std::priority_queue<int, std::vector<int>, std::greater<int>>;
 
-bool IsPercentile(int percentile, int val, const std::vector<int>& sorted_list) {
-  auto lower_bound = std::lower_bound(sorted_list.begin(), sorted_list.end(), val);  
-  auto upper_bound = std::upper_bound(sorted_list.begin(), sorted_list.end(), val);
-  size_t lb_ind = lower_bound - sorted_list.begin(); 
-  size_t ub_ind = upper_bound - sorted_list.begin();
-  size_t sz = sorted_list.size();
-  return lb_ind * 100 <= sz * percentile && sz * percentile <= ub_ind * 100;
-}
-
 class PercentileInAStream {
 public:
   PercentileInAStream(int percentile) : percentile_(percentile) {}

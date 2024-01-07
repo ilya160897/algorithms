@@ -2,6 +2,15 @@
 #include <catch.hpp>
 #include <random>
 
+bool IsPercentile(int percentile, int val, const std::vector<int>& sorted_list) {
+  auto lower_bound = std::lower_bound(sorted_list.begin(), sorted_list.end(), val);
+  auto upper_bound = std::upper_bound(sorted_list.begin(), sorted_list.end(), val);
+  size_t lb_ind = lower_bound - sorted_list.begin();
+  size_t ub_ind = upper_bound - sorted_list.begin();
+  size_t sz = sorted_list.size();
+  return lb_ind * 100 <= sz * percentile && sz * percentile <= ub_ind * 100;
+}
+
 void TestIsPercentile(int percentile, size_t array_size) {
     // Step 1: Create 1'000'000 random integer numbers from -100'000 to 100'000
     std::random_device rd;
