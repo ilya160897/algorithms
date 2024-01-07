@@ -1,0 +1,1 @@
+add_algorithm_executable(heap percentile_in_a_stream)

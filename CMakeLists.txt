@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 project(Algorithms)
 
-set(CMAKE_CXX_COMPILER "/home/linuxbrew/.linuxbrew/bin/clang++")
+# set(CMAKE_CXX_COMPILER "/home/linuxbrew/.linuxbrew/bin/clang++")
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 set(CMAKE_BUILD_TYPE Debug)
